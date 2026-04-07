@@ -1,0 +1,15 @@
+Godot Engine v4.3.stable.official.77dcf97d8 - https://godotengine.org
+Vulkan 1.1.127 - Forward+ - Using Device #0: Intel - Intel(R) UHD Graphics 630
+USER ERROR: Can't create shader cache folder, no shader caching will happen: user://
+   at: RendererCompositorRD (servers/rendering/renderer_rd/renderer_compositor_rd.cpp:272)
+
+Botão 0 pressionado
+Botão 3 pressionado
+Botão 1 pressionado
+Botão 2 pressionado
+Botão 5 pressionado
+Botão 4 pressionado
+Botão 6 pressionado
+Botão 7 pressionado
+Botão 8 pressionado
+Velha

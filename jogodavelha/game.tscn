@@ -1,0 +1,54 @@
+[gd_scene load_steps=2 format=3 uid="uid://ihxv565gowgi"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_ypfpl"]
+
+[node name="Game" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ypfpl")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 440.0
+offset_top = 159.0
+offset_right = 748.0
+offset_bottom = 467.0
+columns = 3
+
+[node name="Button1" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
