@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://nmpg4duyhvx7"]
+
+[ext_resource type="PackedScene" uid="uid://pdhy6d07swp0" path="res://Scenes/ambiente.tscn" id="1_prxdf"]
+[ext_resource type="PackedScene" uid="uid://niowukggntl2" path="res://Scenes/player.tscn" id="2_02cxn"]
+[ext_resource type="PackedScene" uid="uid://btnoefw7tc4w6" path="res://Scenes/trofeu.tscn" id="3_21qq0"]
+[ext_resource type="PackedScene" uid="uid://d216wbcqqsqda" path="res://Scenes/hitbox.tscn" id="4_fj7yx"]
+
+[node name="Fase01" type="Node2D"]
+
+[node name="Ambiente" parent="." instance=ExtResource("1_prxdf")]
+
+[node name="Player" parent="." instance=ExtResource("2_02cxn")]
+position = Vector2(43, 186)
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(5, 5)
+
+[node name="trofeu" parent="." instance=ExtResource("3_21qq0")]
+position = Vector2(758, 237)
+
+[node name="hitbox" parent="." instance=ExtResource("4_fj7yx")]
+position = Vector2(-21, 354)
+scale = Vector2(10.2298, 0.19491)
+
+[connection signal="body_entered" from="trofeu" to="Player" method="_on_trofeu_body_entered"]
+[connection signal="body_entered" from="hitbox" to="Player" method="_on_hitbox_body_entered"]

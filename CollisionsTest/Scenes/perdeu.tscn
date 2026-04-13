@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cajo5073dyc84"]
+
+[ext_resource type="Texture2D" uid="uid://dmr2v1o7a5pcq" path="res://Sprites/JUMPSCAREPERDEU.png" id="1_gdsdx"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(579, 313)
+scale = Vector2(3.16808, 2.3598)
+texture = ExtResource("1_gdsdx")

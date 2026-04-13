@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://btnoefw7tc4w6"]
+
+[ext_resource type="Texture2D" uid="uid://5d3qxfrppkqr" path="res://Sprites/trofer.png" id="1_pgrc8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tpfaa"]
+size = Vector2(28, 24)
+
+[node name="Area2D" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 7.62939e-06)
+scale = Vector2(0.0234983, 0.0196938)
+texture = ExtResource("1_pgrc8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1, 1.01089)
+shape = SubResource("RectangleShape2D_tpfaa")
