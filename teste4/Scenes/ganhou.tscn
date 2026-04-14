@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cryh10ysqw3jh"]
+
+[ext_resource type="Texture2D" uid="uid://ditumhlpcsoxy" path="res://Sprites/Ganhou.png" id="1_xqcw0"]
+
+[node name="Ganhou" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(317, 155)
+scale = Vector2(0.436746, 0.294818)
+texture = ExtResource("1_xqcw0")

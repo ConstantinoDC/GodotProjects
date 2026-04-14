@@ -1,0 +1,152 @@
+[gd_scene load_steps=5 format=3 uid="uid://dvlohxlg7tdtw"]
+
+[ext_resource type="PackedScene" uid="uid://dsfqflsrjvrea" path="res://Scenes/jogador.tscn" id="1_0iilu"]
+[ext_resource type="PackedScene" uid="uid://dacck1c14aaab" path="res://Scenes/parede.tscn" id="2_ffny2"]
+[ext_resource type="PackedScene" uid="uid://dh0yoh1tklteu" path="res://Scenes/parede_s_col.tscn" id="3_62vsf"]
+[ext_resource type="PackedScene" uid="uid://byp6hegnb3gf1" path="res://Scenes/vitoria.tscn" id="4_6dv5t"]
+
+[node name="Fase01" type="Node2D"]
+
+[node name="Jogador" parent="." instance=ExtResource("1_0iilu")]
+position = Vector2(28, 29)
+
+[node name="Camera2D" type="Camera2D" parent="Jogador"]
+zoom = Vector2(2, 2)
+
+[node name="ParedesExt" type="CanvasGroup" parent="."]
+
+[node name="parede3" parent="ParedesExt" instance=ExtResource("2_ffny2")]
+position = Vector2(319, 312)
+scale = Vector2(40, 1)
+
+[node name="parede2" parent="ParedesExt" instance=ExtResource("2_ffny2")]
+position = Vector2(321, 8)
+scale = Vector2(40, 1)
+
+[node name="parede4" parent="ParedesExt" instance=ExtResource("2_ffny2")]
+position = Vector2(632, 137)
+scale = Vector2(1, 16)
+
+[node name="parede" parent="ParedesExt" instance=ExtResource("2_ffny2")]
+position = Vector2(8, 160)
+scale = Vector2(1, 20)
+
+[node name="ParedesInt" type="CanvasGroup" parent="."]
+
+[node name="parede27" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(423, 224)
+scale = Vector2(1, 4)
+
+[node name="parede11" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(142, 143)
+scale = Vector2(1, 7)
+
+[node name="parede5" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(55, 158)
+scale = Vector2(4.97678, 1.10998)
+
+[node name="parede31" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(496, 106)
+scale = Vector2(5, 1)
+
+[node name="parede15" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(107, 255)
+scale = Vector2(6, 1)
+
+[node name="parede20" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(270, 202)
+scale = Vector2(6, 1)
+
+[node name="parede10" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(174, 94)
+scale = Vector2(5, 1)
+
+[node name="parede17" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(294, 108)
+scale = Vector2(4, 1)
+
+[node name="parede28" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(447, 256)
+scale = Vector2(4, 1)
+
+[node name="parede18" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(221, 157)
+scale = Vector2(5, 1)
+
+[node name="parede8" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(156, 51)
+scale = Vector2(12, 1)
+
+[node name="parede25" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(497, 152)
+scale = Vector2(11, 1)
+
+[node name="parede9" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(158, 203)
+scale = Vector2(7, 1)
+
+[node name="parede30" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(527, 58)
+scale = Vector2(7, 1)
+
+[node name="parede26" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(528, 202)
+scale = Vector2(7, 1)
+
+[node name="parede22" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(582, 257)
+scale = Vector2(7, 1)
+
+[node name="parede6" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(54, 83)
+scale = Vector2(1, 5)
+
+[node name="parede12" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(261, 81)
+scale = Vector2(1, 5)
+
+[node name="parede29" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(576, 106)
+scale = Vector2(1, 5)
+
+[node name="parede16" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(263, 279)
+scale = Vector2(1, 5)
+
+[node name="parede13" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(321, 136)
+scale = Vector2(1, 15)
+
+[node name="parede21" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(369, 189)
+scale = Vector2(1, 15)
+
+[node name="parede7" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(99, 126)
+scale = Vector2(1, 5)
+
+[node name="parede19" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(219, 234)
+scale = Vector2(1, 5)
+
+[node name="parede14" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(58, 252)
+scale = Vector2(1, 7)
+
+[node name="parede24" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(418, 104)
+scale = Vector2(1, 7)
+
+[node name="parede23" parent="ParedesInt" instance=ExtResource("2_ffny2")]
+position = Vector2(476, 250)
+scale = Vector2(1, 7)
+
+[node name="Parede_sCol" parent="." instance=ExtResource("3_62vsf")]
+position = Vector2(54, 30)
+scale = Vector2(0.813749, 1.79837)
+
+[node name="Vitoria" parent="." instance=ExtResource("4_6dv5t")]
+position = Vector2(632, 284)
+scale = Vector2(0.677354, -1.78499)
+
+[connection signal="body_entered" from="Vitoria" to="Jogador" method="_on_vitoria_body_entered"]

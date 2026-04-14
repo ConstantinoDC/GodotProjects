@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba5gh05v7bf7f"]
+
+[ext_resource type="Texture2D" uid="uid://kn3ixcucgcgb" path="res://Sprites/Fundo.png" id="1_alo37"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_b6w2x"]
+size = Vector2(22, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqbs7"]
+size = Vector2(20, 320)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_codam"]
+size = Vector2(597.5, 20)
+
+[node name="Ambiente" type="Node2D"]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_alo37")
+offset = Vector2(320, 160)
+
+[node name="AreaVencedora" type="Area2D" parent="."]
+position = Vector2(-23, 0)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="AreaVencedora"]
+position = Vector2(629, 160)
+shape = SubResource("RectangleShape2D_b6w2x")
+
+[node name="MuroDir" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroDir"]
+position = Vector2(629, 160)
+shape = SubResource("RectangleShape2D_b6w2x")
+
+[node name="MuroEsq" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroEsq"]
+position = Vector2(10, 160)
+shape = SubResource("RectangleShape2D_hqbs7")
+
+[node name="MuroSup" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroSup"]
+position = Vector2(320, 10)
+shape = SubResource("RectangleShape2D_codam")
+
+[node name="MuroInf" type="StaticBody2D" parent="."]
+position = Vector2(0, 300)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuroInf"]
+position = Vector2(319, 10)
+shape = SubResource("RectangleShape2D_codam")
