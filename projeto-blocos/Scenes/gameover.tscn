@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjh53oeis7vwj"]
+
+[ext_resource type="Texture2D" uid="uid://dcbc7cuwsfds5" path="res://Sprites/JUMPSCAREPERDEU.png" id="1_5luua"]
+[ext_resource type="Script" path="res://Scenes/gameover.gd" id="2_xisef"]
+
+[node name="Gameover" type="Sprite2D"]
+position = Vector2(325, 236)
+scale = Vector2(1.61474, 1.97927)
+texture = ExtResource("1_5luua")
+script = ExtResource("2_xisef")
+
+[node name="TimerReset2" type="Timer" parent="."]
+wait_time = 3.0
+
+[connection signal="timeout" from="TimerReset2" to="." method="_on_timer_timeout"]

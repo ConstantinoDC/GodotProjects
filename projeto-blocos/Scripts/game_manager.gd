@@ -1,0 +1,29 @@
+extends Node
+
+var started: bool = false
+var lives: int = 3
+var points: int = 0
+var record: int = 0
+
+signal on_powerup # sinal para ativar item coletável
+
+# adicionar pontos
+
+func _add_points(value):
+	points += value
+	
+# resetar pontos
+
+func _reset_points():
+	points = 0
+	
+# Atualizar o recorde
+
+func _update_record():
+	if record < points:
+		record = points
+		
+# Resetar as vidas
+
+func _reset_lives():
+	lives = 3

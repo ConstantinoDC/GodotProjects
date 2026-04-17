@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://8b8yvvm1r4vl"]
+
+[ext_resource type="Script" path="res://bullet.gd" id="1_7vtpq"]
+[ext_resource type="Texture2D" uid="uid://bm5i0vw0im073" path="res://Sprites/Shot.png" id="1_nmsab"]
+[ext_resource type="Texture2D" uid="uid://cvrb1tix8okuf" path="res://Sprites/emotiguy.png" id="3_83o0p"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yrspu"]
+
+[node name="Bullet" type="Area2D"]
+position = Vector2(332, 405)
+collision_mask = 4
+script = ExtResource("1_7vtpq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nmsab")
+
+[node name="emoji" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, 0)
+scale = Vector2(0.95771, 0.811473)
+texture = ExtResource("3_83o0p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yrspu")
+
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
